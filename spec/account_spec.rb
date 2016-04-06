@@ -22,12 +22,21 @@ describe Account do
 
   describe '#withdraw' do
     it 'can make a withdrawal' do
+      account.deposit(1000)
       account.withdraw(500)
-      expect(account.balance).to eq -500
+      expect(account.balance).to eq 500
     end
 
     it 'returns the amount that was withdrawn' do
+      account.deposit(1000)
       expect(account.withdraw(500)).to eq 500
+    end
+
+    context 'when overdraft' do
+      it 'raises an error' do
+        message = 'Cannot withdraw: not enough money in this account'
+        expect { account.withdraw(500) }.to raise_error message
+      end
     end
   end
 end
