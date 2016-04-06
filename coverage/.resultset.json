@@ -8,17 +8,20 @@
         2,
         null,
         1,
-        2,
+        1,
+        1,
+        null,
         null,
         null
       ],
       "/Users/yanyi/Documents/Projects/bank_tech_test/lib/account.rb": [
         1,
         1,
+        1,
         null,
         null
       ]
     },
-    "timestamp": 1459936186
+    "timestamp": 1459937622
   }
 }
