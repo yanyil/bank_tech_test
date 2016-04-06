@@ -1,0 +1,24 @@
+{
+  "RSpec": {
+    "coverage": {
+      "/Users/yanyi/Documents/Projects/bank_tech_test/spec/account_spec.rb": [
+        1,
+        null,
+        1,
+        2,
+        null,
+        1,
+        2,
+        null,
+        null
+      ],
+      "/Users/yanyi/Documents/Projects/bank_tech_test/lib/account.rb": [
+        1,
+        1,
+        null,
+        null
+      ]
+    },
+    "timestamp": 1459936186
+  }
+}
