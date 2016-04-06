@@ -1,14 +1,16 @@
 class Account
   OVERDRAFT_LIMIT = 0
 
-  attr_reader :balance
+  attr_reader :balance, :statement
 
   def initialize
     @balance = 0
+    @statement = []
   end
 
   def deposit(amount)
     @balance += amount
+    @statement << {amount: amount, balance: @balance}
     amount
   end
 

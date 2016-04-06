@@ -5,7 +5,7 @@
         1,
         null,
         1,
-        7,
+        9,
         null,
         1,
         1,
@@ -43,6 +43,17 @@
         null,
         null,
         null,
+        null,
+        1,
+        1,
+        1,
+        null,
+        null,
+        1,
+        1,
+        1,
+        null,
+        null,
         null
       ],
       "/Users/yanyi/Documents/Projects/bank_tech_test/lib/account.rb": [
@@ -52,12 +63,14 @@
         1,
         null,
         1,
-        6,
+        8,
+        8,
         null,
         null,
         1,
-        4,
-        4,
+        5,
+        5,
+        5,
         null,
         null,
         1,
@@ -74,6 +87,6 @@
         null
       ]
     },
-    "timestamp": 1459940012
+    "timestamp": 1459943525
   }
 }

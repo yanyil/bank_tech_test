@@ -39,4 +39,15 @@ describe Account do
       end
     end
   end
+
+  describe '#statement' do
+    it 'starts with empty entries' do
+      expect(account.statement).to be_empty
+    end
+
+    it 'stores the transaction info' do
+      account.deposit(1000)
+      expect(account.statement).to eq [{amount: 1000, balance: 1000}]
+    end
+  end
 end
