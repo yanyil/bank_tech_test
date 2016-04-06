@@ -6,18 +6,19 @@ class StatementPrinter
     @history = ["date || credit || debit || balance"]
   end
 
-  def print_out
-    @account.statement.reverse.each do |entry|
+  def print_out(filter=:descending)
+    apply_filter(filter)
+    @account.statement.each do |entry|
       add_history(entry, entry[:amount])
     end
-    @history.join("\n")
-  end
-
-  def pretty_print
-    print print_out
+    print @history.join("\n")
   end
 
   private
+
+  def apply_filter(filter)
+    @account.statement.reverse! if filter == :descending
+  end
 
   def format_date(date)
     date.strftime("%d/%m/%Y")
