@@ -3,6 +3,7 @@
     "coverage": {
       "/Users/yanyi/Documents/Projects/bank_tech_test/spec/account_spec.rb": [
         1,
+        1,
         null,
         1,
         9,
@@ -52,6 +53,8 @@
         1,
         1,
         1,
+        1,
+        1,
         null,
         null,
         null
@@ -87,6 +90,6 @@
         null
       ]
     },
-    "timestamp": 1459943525
+    "timestamp": 1326153600
   }
 }

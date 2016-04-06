@@ -10,7 +10,7 @@ class Account
 
   def deposit(amount)
     @balance += amount
-    @statement << {amount: amount, balance: @balance}
+    @statement << {date: Time.now, amount: amount, balance: @balance}
     amount
   end
 

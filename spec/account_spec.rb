@@ -1,4 +1,5 @@
 require 'account'
+require 'timecop'
 
 describe Account do
   subject(:account) { described_class.new }
@@ -46,8 +47,10 @@ describe Account do
     end
 
     it 'stores the transaction info' do
+      time_now = Time.local(2012, 1, 10)
+      Timecop.freeze(time_now)
       account.deposit(1000)
-      expect(account.statement).to eq [{amount: 1000, balance: 1000}]
+      expect(account.statement).to eq [{date: time_now, amount: 1000, balance: 1000}]
     end
   end
 end
