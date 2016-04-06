@@ -13,6 +13,10 @@ class StatementPrinter
     @history.join("\n")
   end
 
+  def pretty_print
+    print print_out
+  end
+
   private
 
   def format_date(date)

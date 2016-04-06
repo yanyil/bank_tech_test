@@ -27,4 +27,12 @@ describe StatementPrinter do
       expect(printer.print_out).to eq output
     end
   end
+
+  describe '#pretty_print' do
+    it 'prints out account statement details to stdout' do
+      time_now = Time.local(2012, 1, 10)
+      allow(account).to receive(:statement).and_return [{date: time_now, amount: 1000, balance: 1000}]
+      expect{ printer.pretty_print }.to output("date || credit || debit || balance\n10/01/2012 || 1000.00 || || 1000.00").to_stdout
+    end
+  end
 end
